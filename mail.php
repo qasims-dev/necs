@@ -7,7 +7,6 @@ $to = "aqasim81@gmail.com";
 
 $email_from = $email;
 $headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
 $email_subject = "New NECS Contact";
 $email_body = "You have received a new message from the user $name.\n"."Here is the message:\n $message".
 mail($to,$email_subject,$email_body,$headers);
